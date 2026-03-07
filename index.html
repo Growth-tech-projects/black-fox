@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLACK FOX — Premium Menswear · Bengaluru</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,900;1,400&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<canvas id="pc"></canvas>
+
+<nav class="nav" id="nb">
+    <a href="#hero" class="nav-logo">
+        <img src="assets/images/black-fox-logo.png" alt="Black Fox" style="height: 45px;">
+    </a>
+    <ul class="nav-ul">
+        <li><a href="#offers">Offers</a></li>
+        <li><a href="#col">Collection</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#location">Visit Store</a></li>
+    </ul>
+    <a href="#location" class="nav-cta">Visit Store</a>
+    <button class="ham" id="hb" aria-label="Menu">
+        <span></span><span></span><span></span>
+    </button>
+</nav>
+
+<nav class="mob" id="mn">
+    <a href="#offers"   onclick="cm()">Offers</a>
+    <a href="#col"      onclick="cm()">Collection</a>
+    <a href="#about"    onclick="cm()">About</a>
+    <a href="#reviews"  onclick="cm()">Reviews</a>
+    <a href="#location" onclick="cm()">Visit Store</a>
+</nav>
+
+<section id="hero">
+
+    <div class="slider-container">
+        <div class="slider-track" id="hero-slider">
+            <div class="slide" style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)), url('assets/images/store-front.jpg') center/cover;"></div>
+            <div class="slide" style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)), url('assets/images/offer-banner-1.jpg') center/cover;"></div>
+            <div class="slide" style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)), url('assets/images/offer-banner-2.jpg') center/cover;"></div>
+        </div>
+    </div>
+
+    <div class="h-content">
+        <div class="h-eyebrow">Bengaluru · Premium Menswear · Est. 2023</div>
+
+        <img src="assets/images/black-fox.png" alt="Black Fox Logo" class="h-fox-img">
+
+        <h1 class="h-title">BLACK <span style="color:var(--crimson);">FOX</span></h1>
+        <p class="h-sub">It's not about the brand — it's about <span style="color:var(--crimson)">style</span></p>
+        <div class="h-div"></div>
+        <div class="h-btns">
+            <a href="#col"    class="btn-r">Explore Collection</a>
+            <a href="#offers" class="btn-g">Current Offers</a>
+        </div>
+    </div>
+
+    <div class="h-sc">
+        <div class="sc-t"><div class="sc-b"></div></div>
+        Scroll
+    </div>
+</section>
+
+<div class="mq">
+    <div class="mq-t">
+        <span class="mq-i"><span class="mq-s"></span>Premium Menswear</span>
+        <span class="mq-i"><span class="mq-s"></span>Buy 3 · Save 30%</span>
+        <span class="mq-i"><span class="mq-s"></span>Buy 2 · Save 20%</span>
+        <span class="mq-i"><span class="mq-s"></span>Shirts · Jeans · Tees</span>
+        <span class="mq-i"><span class="mq-s"></span>Kadarenahalli · Bengaluru</span>
+        <span class="mq-i"><span class="mq-s"></span>Open 10 AM – 10 PM</span>
+        <span class="mq-i"><span class="mq-s"></span>5.0 ★ Google Rating</span>
+        <span class="mq-i"><span class="mq-s"></span>Premium Menswear</span>
+        <span class="mq-i"><span class="mq-s"></span>Buy 3 · Save 30%</span>
+        <span class="mq-i"><span class="mq-s"></span>Buy 2 · Save 20%</span>
+    </div>
+</div>
+
+<section id="offers" class="sw">
+    <div class="off-intro rv">
+        <div class="sl">Exclusive Deals</div>
+        <h2 class="sh">Today's <span>Offers</span></h2>
+        <p style="font-size:.9rem;line-height:2;color:var(--silver);">Stack your wardrobe and save more. Click an offer to visit us.</p>
+    </div>
+
+    <div class="off-grid rv">
+        <a href="#location" class="off-c" style="background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.95)), url('assets/images/offer-banner-1.jpg') center/cover;">
+            <div class="off-b">Single Piece</div>
+            <div class="off-n">15</div>
+            <div class="off-u">% Off · Buy 1 Piece</div>
+        </a>
+
+        <a href="#location" class="off-c ft" style="background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.95)), url('assets/images/offer-banner-2.jpg') center/cover;">
+            <div class="off-b" style="color:var(--crimson);border-color:rgba(196,30,30,.28);">Best Value</div>
+            <div class="off-n">20</div>
+            <div class="off-u">% Off · Buy 2 Pieces</div>
+        </a>
+
+        <a href="#location" class="off-c" style="background: #050505;">
+            <div class="off-b" style="color:#d4aa20;border-color:rgba(212,170,32,.28);">🔥 Max Savings</div>
+            <div class="off-n" style="color:var(--gold-light);">30</div>
+            <div class="off-u">% Off · Buy 3 Pieces</div>
+        </a>
+    </div>
+</section>
+
+<section class="sw" style="background: var(--obsidian); padding: 80px 7vw 0; text-align: center;">
+    <div class="rv">
+        <img src="assets/images/store-sign.webp" alt="Black Fox Style Quote Sign" style="max-width: 100%; border-radius: 8px; border: 1px solid #222; box-shadow: 0 15px 40px rgba(0, 0, 0, 0.8);">
+    </div>
+</section>
+
+<section id="mf" class="sw">
+    <div class="mf-g">
+        <div class="rl">
+            <div class="sl">Our Philosophy</div>
+            <blockquote class="mf-q">
+                It's not about<br>
+                <strong>Brand.</strong><br>
+                It's about<br>
+                <em style="font-size:1.5em; color: var(--crimson);">Style.</em><br>
+                And style is<br>
+                <strong>"Black Fox"</strong>
+            </blockquote>
+        </div>
+        <div class="pillars rr">
+            <div class="pl"><div class="pl-n">01</div><div><div class="pl-t">Premium Fabric</div><p class="pl-p">Sourced from top-grade materials.</p></div></div>
+            <div class="pl"><div class="pl-n">02</div><div><div class="pl-t">Trend-Forward</div><p class="pl-p">Constantly refreshed sharp styles.</p></div></div>
+            <div class="pl"><div class="pl-n">03</div><div><div class="pl-t">True Value</div><p class="pl-p">Premium fashion at honest prices.</p></div></div>
+        </div>
+    </div>
+</section>
+
+<section id="col" class="sw">
+    <div class="col-hd">
+        <div class="rl">
+            <div class="sl">What We Carry</div>
+            <h2 class="sh">The <span>Collection</span></h2>
+        </div>
+    </div>
+    <div class="col-g rv">
+        <div class="cc" onclick="openGallery('shirts')">
+            <div class="cc-bg" style="background: url('https://images.unsplash.com/photo-1598033129183-c4f50c736f10?auto=format&fit=crop&w=600&q=80') center/cover;"></div>
+            <div class="cc-ov"></div><div class="cc-body"><div class="cc-name">Premium Shirts</div><span class="cc-arr">Explore →</span></div>
+        </div>
+
+        <div class="cc" onclick="openGallery('trousers')">
+            <div class="cc-bg" style="background: url('https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?auto=format&fit=crop&w=600&q=80') center/cover;"></div>
+            <div class="cc-ov"></div><div class="cc-body"><div class="cc-name">Trousers & Chinos</div><span class="cc-arr">Explore →</span></div>
+        </div>
+
+        <div class="cc" onclick="openGallery('ethnic')">
+            <div class="cc-bg" style="background: url('https://images.unsplash.com/photo-1593030761757-71fae45fa0e7?auto=format&fit=crop&w=600&q=80') center/cover;"></div>
+            <div class="cc-ov"></div><div class="cc-body"><div class="cc-name">Ethnic & Suits</div><span class="cc-arr">Explore →</span></div>
+        </div>
+
+        <div class="cc" onclick="openGallery('jackets')">
+            <div class="cc-bg" style="background: url('https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=600&q=80') center/cover;"></div>
+            <div class="cc-ov"></div><div class="cc-body"><div class="cc-name">Jackets</div><span class="cc-arr">Explore →</span></div>
+        </div>
+    </div>
+</section>
+
+<section id="about" class="sw">
+    <div class="ab-vis rl">
+
+        <div class="ab-fr">
+            <div class="ab-slider-container">
+                <div class="ab-slider-track" id="about-slider">
+                    <div class="ab-slide" style="background: url('assets/images/store-front.webp') center/contain no-repeat #000;"></div>
+                    <div class="ab-slide" style="background: url('assets/images/inside-store1.webp') center/contain no-repeat #000;"></div>
+                    <div class="ab-slide" style="background: url('assets/images/inside-store2.webp') center/contain no-repeat #000;"></div>
+                    <div class="ab-slide" style="background: url('assets/images/inside-store4.webp') center/contain no-repeat #000;"></div>
+                </div>
+            </div>
+            <div class="ab-cap"><h3>Black Fox Store</h3><p>Kadarenahalli · Bengaluru</p></div>
+        </div>
+
+        <div class="ab-badge"><span>5.0</span><span>Google</span></div>
+    </div>
+
+    <div class="rr">
+        <div class="sl">Our Story</div>
+        <h2 class="sh">More than<br><span>Clothing</span></h2>
+        <p class="ab-body">We are Bengaluru's destination for men who take their style seriously. Our curated collection brings premium fabrics, sharp silhouettes, and trend-forward designs under one roof in the heart of Kadarenahalli.</p>
+        <div class="ab-stats">
+            <div class="st"><div class="st-v">5.0</div><div class="st-l">Google Rating</div></div>
+            <div class="st"><div class="st-v">29+</div><div class="st-l">5★ Reviews</div></div>
+        </div>
+        <a href="#location" class="btn-r" style="margin-top:2.5rem;display:inline-block;">Get Directions</a>
+    </div>
+</section>
+
+<section id="reviews" class="sw">
+    <div style="padding:0 7vw;">
+        <div class="rev-hero rv">
+            <div class="rs">5.0</div>
+            <div>
+                <div class="r-stars">★★★★★</div>
+                <div class="r-cnt">29 Reviews on Google Maps</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="rev-wrap" style="overflow: hidden; position: relative;">
+        <div class="rev-tr">
+
+            <div class="rc">
+                <div class="rc-stars">★★★★★</div>
+                <p class="rc-txt">The fabric quality at Black Fox is completely unmatched in Kadarenahalli. Picked up a few premium shirts for the office and they fit perfectly. Highly recommend!</p>
+                <div class="rc-auth"><div class="rc-nm">Suhas</div></div>
+            </div>
+
+            <div class="rc">
+                <div class="rc-stars">★★★★★</div>
+                <p class="rc-txt">Absolutely love the styling! The Buy 3 Save 30% offer is a steal for the premium quality you get. The staff really helps you put a sharp outfit together.</p>
+                <div class="rc-auth"><div class="rc-nm">Prajwal Gowda</div></div>
+            </div>
+
+            <div class="rc">
+                <div class="rc-stars">★★★★★</div>
+                <p class="rc-txt">Bengaluru's best kept secret for menswear. The store's vibe is incredible and the clothes feel genuinely high-end. This is my new permanent spot for shopping.</p>
+                <div class="rc-auth"><div class="rc-nm">Saleem</div></div>
+            </div>
+
+            <div class="rc">
+                <div class="rc-stars">★★★★★</div>
+                <p class="rc-txt">Finding trousers with a perfect tailored fit is hard, but Black Fox nailed it. Excellent customer service and a really modern, fresh collection.</p>
+                <div class="rc-auth"><div class="rc-nm">Sandeep Bhat</div></div>
+            </div>
+
+            <div class="rc">
+                <div class="rc-stars">★★★★★</div>
+                <p class="rc-txt">They really live up to their motto—it's all about pure style here. Bought a jacket and some tees, easily the best additions to my wardrobe this year.</p>
+                <div class="rc-auth"><div class="rc-nm">Akash Deep</div></div>
+            </div>
+
+            <div class="rc">
+                <div class="rc-stars">★★★★</div>
+                <p class="rc-txt">The fabric quality at Black Fox is completely unmatched in Kadarenahalli. Picked up a few premium shirts for the office and they fit perfectly. Highly recommend!</p>
+                <div class="rc-auth"><div class="rc-nm">Suhas</div></div>
+            </div>
+
+            <div class="rc">
+                <div class="rc-stars">★★★★★</div>
+                <p class="rc-txt">Absolutely love the styling! The Buy 3 Save 30% offer is a steal for the premium quality you get. The staff really helps you put a sharp outfit together.</p>
+                <div class="rc-auth"><div class="rc-nm">Prajwal Gowda</div></div>
+            </div>
+
+            <div class="rc">
+                <div class="rc-stars">★★★★★</div>
+                <p class="rc-txt">Bengaluru's best kept secret for menswear. The store's vibe is incredible and the clothes feel genuinely high-end. This is my new permanent spot for shopping.</p>
+                <div class="rc-auth"><div class="rc-nm">Saleem</div></div>
+            </div>
+
+            <div class="rc">
+                <div class="rc-stars">★★★★</div>
+                <p class="rc-txt">Finding trousers with a perfect tailored fit is hard, but Black Fox nailed it. Excellent customer service and a really modern, fresh collection.</p>
+                <div class="rc-auth"><div class="rc-nm">Sandeep Bhat</div></div>
+            </div>
+
+            <div class="rc">
+                <div class="rc-stars">★★★★★</div>
+                <p class="rc-txt">They really live up to their motto—it's all about pure style here. Bought a jacket and some tees, easily the best additions to my wardrobe this year.</p>
+                <div class="rc-auth"><div class="rc-nm">Akash Deep</div></div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="location" class="sw">
+    <div class="rl">
+        <div class="sl">Find Us</div>
+        <h2 class="sh">Visit Our<br><span>Store</span></h2>
+        <div class="loc-d">
+            <div class="loc-r">
+                <div><div class="loc-lb">Address</div><div class="loc-v">2, 2nd Main, Dr. Vishnuvardhan Rd,<br>Mayuri Road, Kadarenahalli,<br>Bengaluru, Karnataka 560070</div></div>
+            </div>
+            <div class="loc-r">
+                <div><div class="loc-lb">Store Hours</div><div class="loc-v">Every Day · 10:00 AM – 10:00 PM</div></div>
+            </div>
+            <div class="loc-r">
+                <div><div class="loc-lb">Phone</div><div class="loc-v"><a href="tel:+918747828348">087478 28348</a></div></div>
+            </div>
+        </div>
+    </div>
+    <div class="map-w rr">
+        <div class="map-b">Black Fox · Bengaluru</div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15555.518600129202!2d77.5457224!3d12.9154464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3f9e98450123%3A0xc3b5933452627e38!2sKadarenahalli%2C%20Bengaluru%2C%20Karnataka%20560070!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" allowfullscreen loading="lazy"></iframe>
+    </div>
+</section>
+
+<footer>
+    <div class="ft-bot">
+        <div class="ft-cp">© 2026 Black Fox. All rights reserved.</div>
+    </div>
+</footer>
+
+<div id="galleryModal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal" onclick="closeGallery()">&times;</span>
+        <h2 id="galleryTitle" class="sh" style="text-align: center; margin-bottom: 20px;">Category</h2>
+        <div id="galleryGrid" class="modal-grid">
+        </div>
+    </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
